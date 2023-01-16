@@ -1,0 +1,15 @@
+name: build
+
+on: [ push, pull_request ]
+
+jobs:
+  default:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Build
+        run: cargo build --release --all-targets
+
+      - name: Test
+        run: cargo test --no-fail-fast
