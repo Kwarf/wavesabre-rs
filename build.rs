@@ -37,8 +37,7 @@ fn main() {
         .file("WaveSabre/WaveSabrePlayerLib/src/PreRenderPlayer.cpp")
         .file("WaveSabre/WaveSabrePlayerLib/src/SongRenderer.cpp")
         .file("WaveSabre/WaveSabrePlayerLib/src/SongRenderer.Track.cpp")
-        .file("src/device.cpp")
-        .file("src/renderer.cpp")
+        .file("src/wrapper.cpp")
         .compile("libwavesabre-rs.a");
 
     println!("cargo:rustc-link-lib=Dsound");
