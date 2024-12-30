@@ -1,10 +1,10 @@
 [package]
 name = "wavesabre-rs"
-version = "0.1.0"
+version = "0.2.0"
 edition = "2021"
 
 [build-dependencies]
-cc = "1.0"
+cc = "1.2"
 
 [dependencies]
 libc = "0.2"
